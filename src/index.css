@@ -1,0 +1,199 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "BlackMango";
+  src: url("./assets/fonts/BlackMango-Black.ttf");
+}
+
+@font-face {
+  font-family: "thedus";
+  src: url("./assets/fonts/Thedus-FONT/Thedus-WideLight.otf");
+}
+@font-face {
+  font-family: "decorative";
+  src: url("./assets/fonts/CinzelDecorative-Bold.ttf");
+}
+@font-face {
+  font-family: "Bropella";
+  src: url("./assets/fonts/Bropella.ttf");
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.font-thedus {
+  font-family: "thedus", sans-serif;
+}
+
+.font-mango {
+  font-family: "BlackMango", sans-serif;
+}
+.font-decorative {
+  font-family: "decorative";
+}
+.font-Bropella {
+  font-family: "Bropella";
+}
+
+.mainHeading {
+  font-size: clamp(2.5rem, 9vw + 2rem, 12rem);
+  line-height: clamp(50px, 8vw + 30px, 140px);
+}
+
+.diamonds-container {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  scroll-behavior: smooth;
+}
+
+.diamond-item {
+  flex: 0 0 auto;
+  width: 33%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.diamond-content {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  position: relative;
+  background: #1b1511;
+  overflow: hidden;
+}
+
+.diamond-content img {
+  width: 80%;
+  height: auto;
+}
+
+.diamond-content span {
+  color: #fff;
+  display: block;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .diamond-item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  .diamond-item {
+    width: 100%;
+  }
+}
+
+/* Hide Scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.rotate-left {
+  transform: rotate(-5deg) translateX(-20px);
+  z-index: 0;
+}
+
+.rotate-right {
+  transform: rotate(5deg) translateX(20px);
+  z-index: 0;
+}
+
+/* Container perspective */
+.dContainer {
+  perspective: 1200px;
+}
+
+/* First left card - strong rotation */
+.prespective-left {
+  transform: rotateY(40deg) rotateX(10deg) translateZ(50px) translateY(10px);
+  transition: transform 0.6s ease;
+}
+
+/* Second left card - subtle rotation */
+.prespective-left-2 {
+  transform: rotateY(15deg) rotateX(-5deg) translateZ(20px) translateY(-5px);
+  transition: transform 0.6s ease;
+}
+
+/* First right card - strong rotation */
+.prespective-right {
+  transform: rotateY(-35deg) rotateX(8deg) translateZ(40px) translateY(10px);
+  transition: transform 0.6s ease;
+}
+
+/* Second right card - subtle rotation */
+.prespective-right-2 {
+  transform: rotateY(-15deg) rotateX(-5deg) translateZ(25px) translateY(-10px);
+  transition: transform 0.6s ease;
+}
+
+/* Optional hover effect for dynamic interactivity */
+.prespective-left:hover,
+.prespective-right:hover,
+.prespective-left-2:hover,
+.prespective-right-2:hover {
+  transform: rotateY(0deg) rotateX(0deg) translateZ(30px);
+}
+
+.customerExperience {
+  animation-name: move;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  display: flex;
+}
+
+.customerExperience:hover {
+  animation-play-state: paused;
+}
+
+.customerExperiencebottom {
+  animation-name: moveleft;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  display: flex;
+}
+
+.customerExperiencebottom:hover {
+  animation-play-state: paused;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-100% - 14px));
+    /* Move left */
+  }
+}
+
+@keyframes moveleft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(100% + 14px));
+    /* Move right */
+  }
+}
