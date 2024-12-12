@@ -12,14 +12,14 @@ const OurWorksSection = () => {
     return (
         <section className="flex flex-col md:pt-12 py-6 relative items-center">
             <div className="flex md:items-start items-center justify-between md:px-6 px-2 max-md:flex-col">
-                <p className="md:w-[35%] max-md:text-center italic  md:text-2xl text-lg text-gray-300 capitalize">
+                <p className="md:w-[35%] max-md:text-center font-serif md:mb-4 mb-10 font-bold md:text-xl text-base">
                     Zales Combination Of Statement and simplistic styles helps create a look that's as unique as you are
                 </p>
                 <h1 className="mainHeading font-Bropella text-reveal">Our Works</h1>
             </div>
             <div className="relative md:mt-14 mt-7 flex w-full md:h-[80%]">
                 <button
-                    className="px-6 w-max md:hidden py-2 rounded-full z-50 border border-white text-white absolute md:bottom-0 -bottom-24 md:left-1/2 left-10
+                    className="px-6 w-max md:hidden py-2 rounded-full z-50 border-l-[1px] border-r-[1px] border-gray-300 text-white absolute md:bottom-0 -bottom-24 md:left-1/2 left-10
           flex items-center justify-center transform -translate-x-1/2 -translate-y-1/2">
                     <BsArrowLeft color="white" className="text-xl" />
                 </button>
@@ -43,7 +43,7 @@ const OurWorksSection = () => {
                     </div>
                 </div>
                 <button
-                    className="px-6 w-max md:hidden py-2 rounded-full border border-gray-400 text-white absolute md:bottom-0 -bottom-24 md:left-1/2 -right-4 transform flex items-center justify-center -translate-x-1/2 -translate-y-1/2">
+                    className="px-6 w-max md:hidden py-2 rounded-full border-l-[1px] border-r-[1px] border-gray-300 text-white absolute md:bottom-0 -bottom-24 md:left-1/2 -right-4 transform flex items-center justify-center -translate-x-1/2 -translate-y-1/2">
                     <BsArrowRight color="white" className="text-xl" />
                 </button>
             </div>

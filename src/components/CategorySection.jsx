@@ -11,10 +11,10 @@ const imageArray = [p4, p2, p1, p3, p5];
 
 const CategorySection = () => {
     return (
-        <section className="overflow-hidden bg-[#1e1c1c] relative flex flex-col items-center md:pt-12">
+        <section className="overflow-hidden bg-[#1e1c1c] relative flex flex-col items-center pt-6 md:pt-12">
             <h1 className="max-md:w-full mainHeading font-Bropella flex md:items-center max-md:flex-col max-md:px-4">
                 <span className="text-reveal mainHeading font-Bropella">Category</span>
-                <div className="flex relative justify-center">
+                <div className="flex relative justify-center max-md:my-4">
                     <div className="relative max-md:-right-4 bg-[#513826] z-10 w-10 flex items-center justify-center h-10 rounded-full">
                         <img src={starImage} alt="Star Icon" className="w-5 h-5" />
                     </div>
@@ -77,7 +77,7 @@ const CategorySection = () => {
                     })}
                 </div>
             </div>
-            <div className="bg-black w-full z-40 h-40 flex justify-center items-center gap-20 md:absolute bottom-0">
+            <div className="bg-black w-full z-40 h-40 flex justify-center items-center gap-20 whitespace-nowrap overflow-x-scroll md:absolute bottom-0">
                 <h3 className="italic  md:text-base text-sm text-gray-400 uppercase">RINGS</h3>
                 <h3 className="italic  md:text-base text-sm text-gray-400 uppercase">EARINGS</h3>
                 <div className="flex flex-col gap-5 justify-center items-center">

@@ -44,7 +44,7 @@
 }
 
 .mainHeading {
-  font-size: clamp(2.5rem, 9vw + 2rem, 12rem);
+  font-size: clamp(2.5rem, 9vw + 1rem, 12rem);
   line-height: clamp(50px, 8vw + 30px, 140px);
 }
 
