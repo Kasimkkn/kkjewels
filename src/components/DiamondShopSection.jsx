@@ -5,26 +5,32 @@ import cushionImage from '../assets/img/cushion.png';
 import roundImage from '../assets/img/round.png';
 import squareImage from '../assets/img/square.png';
 import dropImage from '../assets/img/drop.png';
+import Button from './Button';
 
 const DiamondShopSection = () => {
     return (
-        <section className="section flex flex-col md:py-6 pb-6 mt-4">
-            <div className="w-full flex items-start justify-between max-sm:flex-col max-md:px-2">
-                <h1 className="mainHeading font-Bropella text-reveal">Shop Diamond</h1>
-                <div className="flex items-center max-md:justify-end max-md:w-full max-md:mb-3">
-                    <button className="border rounded-full hover:w-24 
-                    trnasition-all duration-500 ease-in-out
-                    md:w-20 md:h-20 sm:w-16 sm:h-16 w-12 h-12 flex items-center justify-center text-3xl font-thin bg-white text-black">
-                        <BsArrowRight className='text-xl' />
-                    </button>
-                    <button className="border-l-[1px] border-r-[1px] border-gray-300 font-serif uppercase rounded-full md:w-56 md:h-20 sm:w-24 w-28 h-12 text-xs">Try it now</button>
+        <section className="section flex flex-col md:py-6 pb-6 mt-4 max-md:px-2">
+            <div className="w-full flex items-start gap-1 justify-between max-sm:flex-col">
+                <h1 className="mutligrateintAnimatedText font-decorative lg:text-7xl text-5xl ">Shop Diamond By Shape</h1>
+                <div className="flex items-center max-md:w-full max-md:hidden">
+                    <Button
+                        isBorder={true}
+                        className={`hover:w-24 transform transition-all duration-500 ease-in-out md:w-20 md:h-20 sm:w-16 sm:h-16 w-12 h-12 flex items-center justify-center`}
+                    >
+
+                        hello
+                    </Button>
+                    <Button
+                        className={'md:w-56 md:h-20 sm:w-24 w-28 h-12 text-lg'}
+                    >
+                        Try it now
+                    </Button>
                 </div>
             </div>
-            <div className="w-full flex md:items-center justify-between max-sm:flex-col-reverse max-md:px-2">
-                <p className="font-serif md:mb-6 mb-2 font-bold md:text-3xl text-xl md:pl-16 md:w-[50%] md:text-end">
+            <div className="w-full md:w-2/4 my-3 max-md:mt-6 max-md:mb-3">
+                <p className="font-serif md:mb-6 mb-2 text-[1.7rem]">
                     explore the possibilities of tailored craftsmanship and unlimited capabilities
                 </p>
-                <h1 className="mainHeading font-Bropella">by shape</h1>
             </div>
             <div className="md:my-6 relative flex items-center justify-center overflow-x-auto">
                 <div className="hidden md:block">

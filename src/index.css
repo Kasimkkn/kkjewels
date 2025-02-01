@@ -8,44 +8,30 @@
 }
 
 @font-face {
-  font-family: "BlackMango";
-  src: url("./assets/fonts/BlackMango-Black.ttf");
+  font-family: "shiny";
+  src: url("./assets/fonts/shiny.ttf");
 }
 
 @font-face {
-  font-family: "thedus";
-  src: url("./assets/fonts/Thedus-FONT/Thedus-WideLight.otf");
-}
-@font-face {
   font-family: "decorative";
   src: url("./assets/fonts/CinzelDecorative-Bold.ttf");
-}
-@font-face {
-  font-family: "Bropella";
-  src: url("./assets/fonts/Bropella.ttf");
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
 
-.font-thedus {
-  font-family: "thedus", sans-serif;
+.text-5xl {
+  font-size: 3.3rem;
+  line-height: 0.9;
 }
 
-.font-mango {
-  font-family: "BlackMango", sans-serif;
+.font-shiny {
+  font-family: "shiny", sans-serif;
 }
+
 .font-decorative {
   font-family: "decorative";
-}
-.font-Bropella {
-  font-family: "Bropella";
-}
-
-.mainHeading {
-  font-size: clamp(2.5rem, 9vw + 1rem, 12rem);
-  line-height: clamp(50px, 8vw + 30px, 140px);
 }
 
 .diamonds-container {
@@ -195,5 +181,28 @@
   100% {
     transform: translateX(calc(100% + 14px));
     /* Move right */
+  }
+}
+
+.mutligrateintAnimatedText {
+  background: linear-gradient(90deg, gold, silver, #c68585, #a166ab, #5073b8, #1ac4e1, rgb(255, 66, 255), #6fba82);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animatedText 8s ease infinite;
+}
+
+@keyframes animatedText {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
   }
 }

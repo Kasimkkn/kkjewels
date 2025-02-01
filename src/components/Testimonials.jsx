@@ -43,14 +43,12 @@ const testimonials = [
 const Testimonials = () => {
     return (
         <section className="h-screen flex flex-col md:pt-12 pt-6 md:gap-4">
-            <div className="flex md:px-10 px-2">
-                <h1 className="mainHeading font-Bropella text-reveal">Customers</h1>
-            </div>
-            <div className="flex justify-between md:px-10 px-2 max-md:flex-col">
-                <p className="font-serif mb-4 font-bold md:text-xl text-base max-md:text-center md:w-[30%]">
+            <div className="flex md:px-5 px-2 max-md:gap-4 items-center justify-between max-md:flex-col">
+                <h1 className="mutligrateintAnimatedText font-decorative lg:text-7xl text-5xl ">Customers</h1>
+                <p className="font-serif md:text-xl text-[1.7rem] ">
                     Our regular customers help us reach the best with their good and useful comments and suggestions.
                 </p>
-                <h1 className="mainHeading font-Bropella max-md:text-end">Experience</h1>
+                <h1 className="mutligrateintAnimatedText font-decorative lg:text-7xl text-5xl ">Experience</h1>
             </div>
             <div className="my-6 flex flex-col gap-2">
                 <div className="customerExperience flex gap-2 items-center whitespace-nowrap">
@@ -64,11 +62,11 @@ const Testimonials = () => {
                                 className="rounded-full md:w-44 md:h-32 w-28 h-24 object-cover"
                                 alt={testimonial.name}
                             />
-                            <div className="w-[50%] flex flex-col gap-3 overflow-hidden">
-                                <p className={`${testimonial.textColor} md:text-base text-sm font-serif`}>
+                            <div className="md:w-[50%] flex flex-col gap-3 overflow-hidden">
+                                <p className={`${testimonial.textColor} md:text-base text-base font-serif`}>
                                     "{testimonial.quote}"
                                 </p>
-                                <p className={`italic  ${testimonial.textColor} md:text-base text-sm font-serif`}>
+                                <p className={`italic  ${testimonial.textColor} md:text-base text-xl font-serif`}>
                                     {testimonial.name}
                                 </p>
                             </div>

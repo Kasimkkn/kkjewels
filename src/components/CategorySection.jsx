@@ -12,17 +12,17 @@ const imageArray = [p4, p2, p1, p3, p5];
 const CategorySection = () => {
     return (
         <section className="overflow-hidden bg-[#1e1c1c] relative flex flex-col items-center pt-6 md:pt-12">
-            <h1 className="max-md:w-full mainHeading font-Bropella flex md:items-center max-md:flex-col max-md:px-4">
-                <span className="text-reveal mainHeading font-Bropella">Category</span>
-                <div className="flex relative justify-center max-md:my-4">
+            <h1 className="max-md:w-full flex md:items-center max-md:flex-col max-md:px-4">
+                <span className="mutligrateintAnimatedText font-decorative lg:text-7xl text-5xl ">Category</span>
+                <div className="flex relative md:justify-center max-md:my-4">
                     <div className="relative max-md:-right-4 bg-[#513826] z-10 w-10 flex items-center justify-center h-10 rounded-full">
                         <img src={starImage} alt="Star Icon" className="w-5 h-5" />
                     </div>
                     <div className="relative md:right-4 right-0 bg-white w-10 p-2 h-10 rounded-full"></div>
                 </div>
-                <span className="max-md:text-end mainHeading font-Bropella">View</span>
+                <span className="mutligrateintAnimatedText font-decorative lg:text-7xl text-5xl">View</span>
             </h1>
-            <div className="relative mt-6 md:mt-48 flex w-full max-md:flex-col">
+            <div className="relative mt-20 md:mt-48 flex w-full max-md:flex-col">
                 <button
                     className="px-6 py-2 rounded-full z-50 bg-black text-white absolute md:top-0 -top-8 md:left-1/4 left-12 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
                     <BsArrowLeft color='white' className='text-xl' />
