@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import CustomButton from './CustomButton';
 import { Menu, X } from 'lucide-react';
 import AnimatedText from './AnimatedText';
+import { Link } from 'react-router-dom'; // Import Link
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,10 +18,10 @@ const Header = () => {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-8">
-                <a href="#" className="text-base text-gray-200 tracking-widest hover:text-white transition-colors">Home</a>
-                <a href="#" className="text-base text-gray-200 tracking-widest hover:text-white transition-colors">Products</a>
-                <a href="#" className="text-base text-gray-200 tracking-widest hover:text-white transition-colors">Contact</a>
-                <a href="#" className="text-base text-gray-200 tracking-widest hover:text-white transition-colors">Gifting</a>
+                <Link to="/" className="text-base text-gray-200 tracking-widest hover:text-white transition-colors">Home</Link>
+                <Link to="/products" className="text-base text-gray-200 tracking-widest hover:text-white transition-colors">Products</Link>
+                <Link to="/contact" className="text-base text-gray-200 tracking-widest hover:text-white transition-colors">Contact</Link>
+                <Link to="/gifting" className="text-base text-gray-200 tracking-widest hover:text-white transition-colors">Gifting</Link>
             </nav>
 
             {/* Desktop Buttons */}
@@ -53,10 +54,10 @@ const Header = () => {
                         <X />
                     </button>
                     <nav className="flex flex-col space-y-8 text-center">
-                        <a href="#" className="text-2xl text-gray-200 tracking-widest hover:text-white transition-colors" onClick={toggleMenu}>Home</a>
-                        <a href="#" className="text-2xl text-gray-200 tracking-widest hover:text-white transition-colors" onClick={toggleMenu}>Products</a>
-                        <a href="#" className="text-2xl text-gray-200 tracking-widest hover:text-white transition-colors" onClick={toggleMenu}>Contact</a>
-                        <a href="#" className="text-2xl text-gray-200 tracking-widest hover:text-white transition-colors" onClick={toggleMenu}>Gifting</a>
+                        <Link to="/" className="text-2xl text-gray-200 tracking-widest hover:text-white transition-colors" onClick={toggleMenu}>Home</Link>
+                        <Link to="/products" className="text-2xl text-gray-200 tracking-widest hover:text-white transition-colors" onClick={toggleMenu}>Products</Link>
+                        <Link to="/contact" className="text-2xl text-gray-200 tracking-widest hover:text-white transition-colors" onClick={toggleMenu}>Contact</Link>
+                        <Link to="/gifting" className="text-2xl text-gray-200 tracking-widest hover:text-white transition-colors" onClick={toggleMenu}>Gifting</Link>
                     </nav>
                     <div className="flex flex-col gap-4 mt-8">
                         <CustomButton className="w-40" onClick={toggleMenu}>
