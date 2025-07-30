@@ -20,14 +20,14 @@ const CategorySection = () => {
     return (
         <section className="overflow-hidden bg-[#1e1c1c] relative flex flex-col items-center pt-6 md:pt-12">
             <h1 className="max-md:w-full flex md:items-center max-md:flex-col max-md:px-4">
-                <AnimatedText className="mutligrateintAnimatedText font-playfair lg:text-7xl text-5xl ">Category</AnimatedText>
+                <AnimatedText className="mutligrateintAnimatedText font-decorative lg:text-7xl text-5xl ">Category</AnimatedText>
                 <div className="flex relative md:justify-center max-md:my-4">
                     <div className="relative max-md:-right-4 bg-[#513826] z-10 w-10 flex items-center justify-center h-10 rounded-full">
                         <img src={starImage} alt="Star Icon" className="w-5 h-5" />
                     </div>
                     <div className="relative md:right-4 right-0 bg-white w-10 p-2 h-10 rounded-full"></div>
                 </div>
-                <AnimatedText className="mutligrateintAnimatedText font-playfair lg:text-7xl text-5xl">View</AnimatedText>
+                <AnimatedText className="mutligrateintAnimatedText font-decorative lg:text-7xl text-5xl">View</AnimatedText>
             </h1>
             <div className="relative mt-20 md:mt-48 flex w-full max-md:flex-col">
                 <Carousel
@@ -57,14 +57,14 @@ const CategorySection = () => {
                 </Carousel>
             </div>
             <div className="bg-black w-full z-40 h-40 flex justify-center items-center gap-20 whitespace-nowrap overflow-x-scroll md:absolute bottom-0">
-                <AnimatedText className="italic  md:text-base text-sm text-gray-400 uppercase font-lora">RINGS</AnimatedText>
-                <AnimatedText className="italic  md:text-base text-sm text-gray-400 uppercase font-lora" delay={0.1}>EARINGS</AnimatedText>
+                <AnimatedText className="italic  md:text-base text-sm text-gray-400 uppercase">RINGS</AnimatedText>
+                <AnimatedText className="italic  md:text-base text-sm text-gray-400 uppercase" delay={0.1}>EARINGS</AnimatedText>
                 <div className="flex flex-col gap-5 justify-center items-center">
-                    <AnimatedText className="text-3xl font-playfair leading-[30px]" delay={0.2}>NECKLACE</AnimatedText>
-                    <AnimatedText className="italic  md:text-base text-sm leading text-gray-400 uppercase font-lora" delay={0.3}>210 items</AnimatedText>
+                    <AnimatedText className="text-3xl font-Bropella leading-[30px]" delay={0.2}>NECKLACE</AnimatedText>
+                    <AnimatedText className="italic  md:text-base text-sm leading text-gray-400 uppercase" delay={0.3}>210 items</AnimatedText>
                 </div>
-                <AnimatedText className="italic  md:text-base text-sm text-gray-400 uppercase font-lora" delay={0.4}>WEDDINg</AnimatedText>
-                <AnimatedText className="italic  md:text-base text-sm text-gray-400 uppercase font-lora" delay={0.5}>Bracelet</AnimatedText>
+                <AnimatedText className="italic  md:text-base text-sm text-gray-400 uppercase" delay={0.4}>WEDDINg</AnimatedText>
+                <AnimatedText className="italic  md:text-base text-sm text-gray-400 uppercase" delay={0.5}>Bracelet</AnimatedText>
             </div>
         </section>
     );

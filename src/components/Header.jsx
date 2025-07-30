@@ -13,7 +13,7 @@ const Header = () => {
     return (
         <header className="fixed top-0 left-0 w-full z-[1000] p-4 flex items-center justify-between bg-black/30 backdrop-blur-md">
             {/* Logo */}
-            <AnimatedText className="text-xl font-lora font-bold pl-2 text-white">KkJewels</AnimatedText>
+            <AnimatedText className="text-xl font-bold font-serif pl-2 text-white">KkJewels</AnimatedText>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-8">

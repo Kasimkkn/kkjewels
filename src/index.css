@@ -2,15 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
 * {
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: 'Lora', serif; /* Set Lora as default body font */
+@font-face {
+  font-family: "shiny";
+  src: url("./assets/fonts/shiny.ttf");
+}
+
+@font-face {
+  font-family: "decorative";
+  src: url("./assets/fonts/CinzelDecorative-Bold.ttf");
 }
 
 ::-webkit-scrollbar {
@@ -22,7 +26,13 @@ body {
   line-height: 0.9;
 }
 
-/* Removed .font-shiny and .font-decorative as they are replaced by Tailwind classes */
+.font-shiny {
+  font-family: "shiny", sans-serif;
+}
+
+.font-decorative {
+  font-family: "decorative";
+}
 
 .diamonds-container {
   display: flex;

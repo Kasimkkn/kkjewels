@@ -8,7 +8,7 @@ const JewelryFeatureSection = () => {
     return (
         <section className="flex flex-col md:gap-10 gap-4 pt-24">
             <div className="flex md:items-center justify-between max-md:flex-col px-4">
-                <AnimatedText className="mutligrateintAnimatedText font-playfair lg:text-7xl text-5xl max-md:mb-5 ">Watch on</AnimatedText>
+                <AnimatedText className="mutligrateintAnimatedText font-decorative lg:text-7xl text-5xl max-md:mb-5 ">Watch on</AnimatedText>
                 <div className="flex">
                     <div className="flex relative ml-10 mr-8">
                         <button className="absolute -left-8 z-10 md:w-24 md:h-24 h-16 w-16 rounded-full border border-gray-400"></button>
@@ -23,10 +23,10 @@ const JewelryFeatureSection = () => {
                         Try it now
                     </CustomButton>
                 </div>
-                <AnimatedText className="mutligrateintAnimatedText font-playfair lg:text-7xl text-[2.8rem] max-md:mt-5" delay={0.2}>Your Hands!</AnimatedText>
+                <AnimatedText className="mutligrateintAnimatedText font-decorative lg:text-7xl text-[2.8rem] max-md:mt-5" delay={0.2}>Your Hands!</AnimatedText>
             </div>
             <div className="px-4 md:text-center">
-                <AnimatedText className="font-lora text-[1.7rem] max-md:my-3" delay={0.4}>
+                <AnimatedText className="font-serif text-[1.7rem] max-md:my-3" delay={0.4}>
                     with the help of Ai, You can upload photo of your hand and see the ring on your hand before buying
                 </AnimatedText>
 
@@ -35,7 +35,7 @@ const JewelryFeatureSection = () => {
                 <img src={watch} className="w-full h-[500px] object-cover" alt="Watch" />
             </div>
             <div className="w-full flex flex-col items-center justify-center my-6 px-4 md:px-6">
-                <AnimatedText className="font-lora md:text-center text-[1.7rem]" delay={0.6}>
+                <AnimatedText className="font-serif md:text-center text-[1.7rem]" delay={0.6}>
                     Trends Come and Go 〽️ and Style evolves 💎 it's important to have 🎉pieces of jewelry that are timeless
                     and look chic despite ever changin 👑 fashion
                 </AnimatedText>
