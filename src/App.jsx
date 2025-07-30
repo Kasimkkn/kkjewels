@@ -29,7 +29,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <main className="flex flex-col pt-[3rem] w-screen overflow-x-hidden">
+      <main className="flex flex-col w-screen overflow-x-hidden">
         <SliderSection />
         <DiamondShopSection />
         <CategorySection />
