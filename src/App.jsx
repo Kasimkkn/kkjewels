@@ -8,6 +8,10 @@ import NewCollection from './components/NewCollection'
 import OurWorksSection from './components/OurWorksSection'
 import SliderSection from './components/SliderSection'
 import Testimonials from './components/Testimonials'
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {
   useEffect(() => {

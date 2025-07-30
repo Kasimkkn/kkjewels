@@ -10,6 +10,7 @@ import {
     CarouselNext,
 } from "./ui/carousel";
 import CustomButton from './CustomButton';
+import AnimatedText from './AnimatedText';
 
 const SliderSection = () => {
     const videos = [video1, video2, video3]; // Array of video sources
@@ -31,13 +32,13 @@ const SliderSection = () => {
                 <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10"></div>
 
                 <div className="relative z-20 flex flex-col items-center justify-center p-4 md:p-8">
-                    <h1 className="font-decorative text-white text-5xl md:text-7xl lg:text-8xl leading-tight mb-4 drop-shadow-lg">
+                    <AnimatedText className="font-decorative text-white text-5xl md:text-7xl lg:text-8xl leading-tight mb-4 drop-shadow-lg">
                         Crafted for Eternity
-                    </h1>
-                    <p className="font-serif text-gray-200 text-lg md:text-xl lg:text-2xl max-w-3xl mb-8 drop-shadow-md">
+                    </AnimatedText>
+                    <AnimatedText className="font-serif text-gray-200 text-lg md:text-xl lg:text-2xl max-w-3xl mb-8 drop-shadow-md" delay={0.2}>
                         Discover exquisite pieces that blend timeless elegance with modern design,
                         perfectly reflecting your unique style.
-                    </p>
+                    </AnimatedText>
                     <div className="flex gap-4 flex-wrap justify-center">
                         <CustomButton className="px-8 py-3 text-lg md:text-xl">
                             Explore Collections

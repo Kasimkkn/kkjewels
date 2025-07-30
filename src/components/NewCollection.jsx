@@ -2,16 +2,18 @@ import React from 'react'
 import necklace from '../assets/img/necklace1.jpg';
 import mock1 from '../assets/img/mock1.jpg';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
+import AnimatedText from './AnimatedText';
+
 const NewCollection = () => {
     return (
         <section className="flex flex-col md:pt-12 pt-32 relative">
             <div className="flex md:px-10 px-2 md:gap-8 gap-4 md:items-center justify-between max-md:flex-col">
-                <h1 className="mutligrateintAnimatedText font-decorative lg:text-7xl text-5xl ">New</h1>
-                <p className="md:w-[40%] font-serif max-md:mb-6 md:text-xl text-[1.7rem] md:text-center">
+                <AnimatedText className="mutligrateintAnimatedText font-decorative lg:text-7xl text-5xl ">New</AnimatedText>
+                <AnimatedText className="md:w-[40%] font-serif max-md:mb-6 md:text-xl text-[1.7rem] md:text-center" delay={0.2}>
                     Zale's Combination of Statement and simplistic style helps create a look that's as unique as you are
-                </p>
+                </AnimatedText>
                 <div className="flex md:justify-end justify-center">
-                    <h1 className="mutligrateintAnimatedText font-decorative lg:text-7xl text-5xl ">Collection</h1>
+                    <AnimatedText className="mutligrateintAnimatedText font-decorative lg:text-7xl text-5xl " delay={0.4}>Collection</AnimatedText>
                 </div>
             </div>
             <div className="flex max-md:flex-col mt-10 relative">
@@ -24,19 +26,19 @@ const NewCollection = () => {
                     <div className="absolute max-md:hidden inset-0 bg-black bg-opacity-30 backdrop-blur-md"></div>
                     <div className="relative z-10 flex flex-col justify-between h-full">
                         <div className="flex flex-col gap-2">
-                            <p className="text-gray-400 font-serif">From: <span className="text-white">Classic Set</span></p>
-                            <p className="text-white text-3xl font-decorative">Introducing The Zales Lesedi La Rona</p>
-                            <p className="uppercase text-[#5b3e3e] font-serif">A record-breaking jewel</p>
-                            <p className="text-gray-200/65 font-thin text-lg font-serif">
+                            <AnimatedText className="text-gray-400 font-serif">From: <span className="text-white">Classic Set</span></AnimatedText>
+                            <AnimatedText className="text-white text-3xl font-decorative" delay={0.1}>Introducing The Zales Lesedi La Rona</AnimatedText>
+                            <AnimatedText className="uppercase text-[#5b3e3e] font-serif" delay={0.2}>A record-breaking jewel</AnimatedText>
+                            <AnimatedText className="text-gray-200/65 font-thin text-lg font-serif" delay={0.3}>
                                 The 302.37 Carat Zales Lesedi La Rona is the Bestes Highest Colour, Highest Clarity
                                 Diamond Ever Certified By The GIA, And The World's Largest Square Emerald Cut Diamond, Expertly
                                 Cut And Polished By Graff's World Leading Team Of Gemmologists And Master Polishers. This Rare
                                 Marvel Required Over 18 Months Of Meticulous Craftsmanship, And...
-                            </p>
+                            </AnimatedText>
                         </div>
                         <div className="flex flex-col gap-1 mt-4">
-                            <span className="text-gray-300 font-serif">Expert Analysis</span>
-                            <span className="text-gray-300 font-serif">A Sensational Result</span>
+                            <AnimatedText className="text-gray-300 font-serif" delay={0.4}>Expert Analysis</AnimatedText>
+                            <AnimatedText className="text-gray-300 font-serif" delay={0.5}>A Sensational Result</AnimatedText>
                         </div>
                     </div>
                 </div>

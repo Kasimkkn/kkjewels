@@ -6,12 +6,13 @@ import roundImage from '../assets/img/round.png';
 import squareImage from '../assets/img/square.png';
 import dropImage from '../assets/img/drop.png';
 import CustomButton from './CustomButton';
+import AnimatedText from './AnimatedText';
 
 const DiamondShopSection = () => {
     return (
         <section className="section flex flex-col md:py-6 pb-6 mt-4 max-md:px-2">
             <div className="w-full flex items-start gap-1 justify-between max-sm:flex-col">
-                <h1 className="mutligrateintAnimatedText font-decorative lg:text-7xl text-5xl ">Shop Diamond By Shape</h1>
+                <AnimatedText className="mutligrateintAnimatedText font-decorative lg:text-7xl text-5xl ">Shop Diamond By Shape</AnimatedText>
                 <div className="flex items-center max-md:w-full max-md:hidden">
                     <CustomButton
                         isBorder={true}
@@ -28,9 +29,9 @@ const DiamondShopSection = () => {
                 </div>
             </div>
             <div className="w-full md:w-2/4 my-3 max-md:mt-6 max-md:mb-3">
-                <p className="font-serif md:mb-6 mb-2 text-[1.7rem]">
+                <AnimatedText className="font-serif md:mb-6 mb-2 text-[1.7rem]" delay={0.2}>
                     explore the possibilities of tailored craftsmanship and unlimited capabilities
-                </p>
+                </AnimatedText>
             </div>
             <div className="md:my-6 relative flex items-center justify-center overflow-x-auto">
                 <div className="hidden md:block">
