@@ -45,11 +45,11 @@ const Testimonials = () => {
     return (
         <section className="h-screen flex flex-col md:pt-12 pt-6 md:gap-4">
             <div className="flex md:px-5 px-2 max-md:gap-4 items-center justify-between max-md:flex-col">
-                <AnimatedText className="mutligrateintAnimatedText font-decorative lg:text-7xl text-5xl ">Customers</AnimatedText>
-                <AnimatedText className="font-serif md:text-xl text-[1.7rem] " delay={0.2}>
+                <AnimatedText className="mutligrateintAnimatedText font-playfair lg:text-7xl text-5xl ">Customers</AnimatedText>
+                <AnimatedText className="font-lora md:text-xl text-[1.7rem] " delay={0.2}>
                     Our regular customers help us reach the best with their good and useful comments and suggestions.
                 </AnimatedText>
-                <AnimatedText className="mutligrateintAnimatedText font-decorative lg:text-7xl text-5xl " delay={0.4}>Experience</AnimatedText>
+                <AnimatedText className="mutligrateintAnimatedText font-playfair lg:text-7xl text-5xl " delay={0.4}>Experience</AnimatedText>
             </div>
             <div className="my-6 flex flex-col gap-2">
                 <div className="customerExperience flex gap-2 items-center whitespace-nowrap">
@@ -64,10 +64,10 @@ const Testimonials = () => {
                                 alt={testimonial.name}
                             />
                             <div className="md:w-[50%] flex flex-col gap-3 overflow-hidden">
-                                <AnimatedText className={`${testimonial.textColor} md:text-base text-base font-serif`} delay={index * 0.1}>
+                                <AnimatedText className={`${testimonial.textColor} md:text-base text-base font-lora`} delay={index * 0.1}>
                                     "{testimonial.quote}"
                                 </AnimatedText>
-                                <AnimatedText className={`italic  ${testimonial.textColor} md:text-base text-xl font-serif`} delay={index * 0.1 + 0.05}>
+                                <AnimatedText className={`italic  ${testimonial.textColor} md:text-base text-xl font-lora`} delay={index * 0.1 + 0.05}>
                                     {testimonial.name}
                                 </AnimatedText>
                             </div>
@@ -86,10 +86,10 @@ const Testimonials = () => {
                                 alt={testimonial.name}
                             />
                             <div className="w-[50%] flex flex-col gap-3 overflow-hidden">
-                                <AnimatedText className={` ${testimonial.textColor} md:text-base text-sm font-serif`} delay={index * 0.1}>
+                                <AnimatedText className={` ${testimonial.textColor} md:text-base text-sm font-lora`} delay={index * 0.1}>
                                     "{testimonial.quote}"
                                 </AnimatedText>
-                                <AnimatedText className={`italic  ${testimonial.textColor} md:text-base text-sm font-serif`} delay={index * 0.1 + 0.05}>
+                                <AnimatedText className={`italic  ${testimonial.textColor} md:text-base text-sm font-lora`} delay={index * 0.1 + 0.05}>
                                     {testimonial.name}
                                 </AnimatedText>
                             </div>

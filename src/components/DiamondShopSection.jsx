@@ -12,7 +12,7 @@ const DiamondShopSection = () => {
     return (
         <section className="section flex flex-col md:py-6 pb-6 mt-4 max-md:px-2">
             <div className="w-full flex items-start gap-1 justify-between max-sm:flex-col">
-                <AnimatedText className="mutligrateintAnimatedText font-decorative lg:text-7xl text-5xl ">Shop Diamond By Shape</AnimatedText>
+                <AnimatedText className="mutligrateintAnimatedText font-playfair lg:text-7xl text-5xl ">Shop Diamond By Shape</AnimatedText>
                 <div className="flex items-center max-md:w-full max-md:hidden">
                     <CustomButton
                         isBorder={true}
@@ -29,7 +29,7 @@ const DiamondShopSection = () => {
                 </div>
             </div>
             <div className="w-full md:w-2/4 my-3 max-md:mt-6 max-md:mb-3">
-                <AnimatedText className="font-serif md:mb-6 mb-2 text-[1.7rem]" delay={0.2}>
+                <AnimatedText className="font-lora md:mb-6 mb-2 text-[1.7rem]" delay={0.2}>
                     explore the possibilities of tailored craftsmanship and unlimited capabilities
                 </AnimatedText>
             </div>

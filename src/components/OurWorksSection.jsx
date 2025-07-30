@@ -19,10 +19,10 @@ const OurWorksSection = () => {
     return (
         <section className="flex flex-col md:pt-12 py-6 relative items-center">
             <div className="flex md:items-start justify-between md:px-6 px-4 max-md:flex-col">
-                <AnimatedText className="md:w-[35%] font-serif md:mb-4 mb-4 text-[1.7rem]">
+                <AnimatedText className="md:w-[35%] font-lora md:mb-4 mb-4 text-[1.7rem]">
                     Zales Combination Of Statement and simplistic styles helps create a look that's as unique as you are
                 </AnimatedText>
-                <AnimatedText className="mutligrateintAnimatedText font-decorative lg:text-7xl text-[2.7rem]" delay={0.2}>Our Works</AnimatedText>
+                <AnimatedText className="mutligrateintAnimatedText font-playfair lg:text-7xl text-[2.7rem]" delay={0.2}>Our Works</AnimatedText>
             </div>
             <div className="relative md:mt-14 mt-7 flex w-full md:h-[80%]">
                 <Carousel
