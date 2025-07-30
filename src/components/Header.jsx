@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from './Button'
+import CustomButton from './CustomButton'
 
 const Header = () => {
     return (
@@ -13,12 +13,12 @@ const Header = () => {
                 <a href="#" className="text-base text-gray-200 tracking-widest">Gifting</a>
             </nav>
             <div className="flex items-center">
-                <Button>
+                <CustomButton>
                     shop
-                </Button>
-                <Button isBorder={true}>
+                </CustomButton>
+                <CustomButton isBorder={true}>
                     login
-                </Button>
+                </CustomButton>
             </div>
 
         </header>

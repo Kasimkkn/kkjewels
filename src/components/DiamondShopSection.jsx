@@ -5,7 +5,7 @@ import cushionImage from '../assets/img/cushion.png';
 import roundImage from '../assets/img/round.png';
 import squareImage from '../assets/img/square.png';
 import dropImage from '../assets/img/drop.png';
-import Button from './Button';
+import CustomButton from './CustomButton';
 
 const DiamondShopSection = () => {
     return (
@@ -13,18 +13,18 @@ const DiamondShopSection = () => {
             <div className="w-full flex items-start gap-1 justify-between max-sm:flex-col">
                 <h1 className="mutligrateintAnimatedText font-decorative lg:text-7xl text-5xl ">Shop Diamond By Shape</h1>
                 <div className="flex items-center max-md:w-full max-md:hidden">
-                    <Button
+                    <CustomButton
                         isBorder={true}
                         className={`hover:w-24 transform transition-all duration-500 ease-in-out md:w-20 md:h-20 sm:w-16 sm:h-16 w-12 h-12 flex items-center justify-center`}
                     >
 
                         hello
-                    </Button>
-                    <Button
+                    </CustomButton>
+                    <CustomButton
                         className={'md:w-56 md:h-20 sm:w-24 w-28 h-12 text-lg'}
                     >
                         Try it now
-                    </Button>
+                    </CustomButton>
                 </div>
             </div>
             <div className="w-full md:w-2/4 my-3 max-md:mt-6 max-md:mb-3">

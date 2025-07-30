@@ -1,7 +1,7 @@
 import React from 'react';
 import { BsArrowRight } from 'react-icons/bs';
 import watch from '../assets/img/watch.jpg';
-import Button from './Button';
+import CustomButton from './CustomButton';
 const JewelryFeatureSection = () => {
     return (
         <section className="flex flex-col md:gap-10 gap-4 pt-24">
@@ -15,11 +15,11 @@ const JewelryFeatureSection = () => {
                         </button>
                         <button className="absolute -right-8 z-10 md:w-24 md:h-24 h-16 w-16 rounded-full border border-gray-400"></button>
                     </div>
-                    <Button
+                    <CustomButton
                         className={'md:px-24 md:py-8 px-16 text-lg'}
                     >
                         Try it now
-                    </Button>
+                    </CustomButton>
                 </div>
                 <h1 className="mutligrateintAnimatedText font-decorative lg:text-7xl text-[2.8rem] max-md:mt-5">Your Hands!</h1>
             </div>
