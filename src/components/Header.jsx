@@ -1,18 +1,29 @@
-import React from 'react'
-import CustomButton from './CustomButton'
+import React, { useState } from 'react';
+import CustomButton from './CustomButton';
+import { Menu, X } from 'lucide-react';
 
 const Header = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
-        <header
-            className="fixed z-[1000] w-screen flex justify-between font-decorative items-center p-2  rounded-full shadow-lg bg-black/50 bg-opacity-50">
-            <div className="text-xl font-bold font-serif pl-2">KkJewels</div>
-            <nav className="max-md:hidden flex space-x-6">
-                <a href="#" className="text-base text-gray-200 tracking-widest">Home</a>
-                <a href="#" className="text-base text-gray-200 tracking-widest">Products</a>
-                <a href="#" className="text-base text-gray-200 tracking-widest">Contact</a>
-                <a href="#" className="text-base text-gray-200 tracking-widest">Gifting</a>
+        <header className="fixed top-0 left-0 w-full z-[1000] p-4 flex items-center justify-between bg-black/30 backdrop-blur-md">
+            {/* Logo */}
+            <div className="text-xl font-bold font-serif pl-2 text-white">KkJewels</div>
+
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex space-x-8">
+                <a href="#" className="text-base text-gray-200 tracking-widest hover:text-white transition-colors">Home</a>
+                <a href="#" className="text-base text-gray-200 tracking-widest hover:text-white transition-colors">Products</a>
+                <a href="#" className="text-base text-gray-200 tracking-widest hover:text-white transition-colors">Contact</a>
+                <a href="#" className="text-base text-gray-200 tracking-widest hover:text-white transition-colors">Gifting</a>
             </nav>
-            <div className="flex items-center">
+
+            {/* Desktop Buttons */}
+            <div className="hidden md:flex items-center gap-4">
                 <CustomButton>
                     shop
                 </CustomButton>
@@ -21,9 +32,43 @@ const Header = () => {
                 </CustomButton>
             </div>
 
+            {/* Mobile Menu Button */}
+            <button
+                onClick={toggleMenu}
+                className="md:hidden text-white text-3xl focus:outline-none"
+                aria-label="Toggle menu"
+            >
+                {isMenuOpen ? <X /> : <Menu />}
+            </button>
+
+            {/* Mobile Menu Overlay */}
+            {isMenuOpen && (
+                <div className="fixed inset-0 z-[1001] bg-black/90 backdrop-blur-lg flex flex-col items-center justify-center transition-opacity duration-300 ease-in-out opacity-100">
+                    <button
+                        onClick={toggleMenu}
+                        className="absolute top-4 right-4 text-white text-3xl focus:outline-none"
+                        aria-label="Close menu"
+                    >
+                        <X />
+                    </button>
+                    <nav className="flex flex-col space-y-8 text-center">
+                        <a href="#" className="text-2xl text-gray-200 tracking-widest hover:text-white transition-colors" onClick={toggleMenu}>Home</a>
+                        <a href="#" className="text-2xl text-gray-200 tracking-widest hover:text-white transition-colors" onClick={toggleMenu}>Products</a>
+                        <a href="#" className="text-2xl text-gray-200 tracking-widest hover:text-white transition-colors" onClick={toggleMenu}>Contact</a>
+                        <a href="#" className="text-2xl text-gray-200 tracking-widest hover:text-white transition-colors" onClick={toggleMenu}>Gifting</a>
+                    </nav>
+                    <div className="flex flex-col gap-4 mt-8">
+                        <CustomButton className="w-40" onClick={toggleMenu}>
+                            shop
+                        </CustomButton>
+                        <CustomButton isBorder={true} className="w-40" onClick={toggleMenu}>
+                            login
+                        </CustomButton>
+                    </div>
+                </div>
+            )}
         </header>
+    );
+};
 
-    )
-}
-
-export default Header
+export default Header;
