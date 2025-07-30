@@ -1,5 +1,6 @@
 import React from 'react';
 import AnimatedText from './AnimatedText';
+import { Link } from 'react-router-dom'; // Import Link
 
 const Footer = () => {
     return (
@@ -17,10 +18,11 @@ const Footer = () => {
                 <div>
                     <AnimatedText className="text-lg font-semibold text-white mb-4">Quick Links</AnimatedText>
                     <ul className="space-y-2">
-                        <li><a href="/" className="text-sm hover:text-white transition-colors">Home</a></li>
-                        <li><a href="/products" className="text-sm hover:text-white transition-colors">Products</a></li>
-                        <li><a href="/contact" className="text-sm hover:text-white transition-colors">Contact</a></li>
-                        <li><a href="/gifting" className="text-sm hover:text-white transition-colors">Gifting</a></li>
+                        <li><Link to="/" className="text-sm hover:text-white transition-colors">Home</Link></li>
+                        <li><Link to="/shop" className="text-sm hover:text-white transition-colors">Shop</Link>
+                        </li>
+                        <li><Link to="/contact" className="text-sm hover:text-white transition-colors">Contact</Link></li>
+                        <li><Link to="/gifting" className="text-sm hover:text-white transition-colors">Gifting</Link></li>
                     </ul>
                 </div>
 
@@ -28,10 +30,10 @@ const Footer = () => {
                 <div>
                     <AnimatedText className="text-lg font-semibold text-white mb-4">Services</AnimatedText>
                     <ul className="space-y-2">
-                        <li><a href="#" className="text-sm hover:text-white transition-colors">Custom Design</a></li>
-                        <li><a href="#" className="text-sm hover:text-white transition-colors">Repairs</a></li>
-                        <li><a href="#" className="text-sm hover:text-white transition-colors">Consultation</a></li>
-                        <li><a href="#" className="text-sm hover:text-white transition-colors">Certifications</a></li>
+                        <li><Link to="/custom-design" className="text-sm hover:text-white transition-colors">Custom Design</Link></li>
+                        <li><Link to="/repairs" className="text-sm hover:text-white transition-colors">Repairs</Link></li>
+                        <li><Link to="/consultation" className="text-sm hover:text-white transition-colors">Consultation</Link></li>
+                        <li><Link to="/certifications" className="text-sm hover:text-white transition-colors">Certifications</Link></li>
                     </ul>
                 </div>
 

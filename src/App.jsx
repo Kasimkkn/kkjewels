@@ -9,10 +9,14 @@ import NewCollection from './components/NewCollection'
 import OurWorksSection from './components/OurWorksSection'
 import SliderSection from './components/SliderSection'
 import Testimonials from './components/Testimonials'
-import Footer from './components/Footer'; // Import the new Footer
-import ProductsPage from './pages/ProductsPage'; // Import new pages
+import Footer from './components/Footer';
+import ShopPage from './pages/ShopPage'; // Updated import
 import ContactPage from './pages/ContactPage';
 import GiftingPage from './pages/GiftingPage';
+import CustomDesignPage from './pages/CustomDesignPage'; // New import
+import RepairsPage from './pages/RepairsPage'; // New import
+import ConsultationPage from './pages/ConsultationPage'; // New import
+import CertificationsPage from './pages/CertificationsPage'; // New import
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -55,9 +59,13 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<HomeContent />} />
-        <Route path="/products" element={<ProductsPage />} />
+        <Route path="/shop" element={<ShopPage />} /> {/* Updated route */}
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/gifting" element={<GiftingPage />} />
+        <Route path="/custom-design" element={<CustomDesignPage />} /> {/* New route */}
+        <Route path="/repairs" element={<RepairsPage />} /> {/* New route */}
+        <Route path="/consultation" element={<ConsultationPage />} /> {/* New route */}
+        <Route path="/certifications" element={<CertificationsPage />} /> {/* New route */}
       </Routes>
       <Footer />
     </Router>

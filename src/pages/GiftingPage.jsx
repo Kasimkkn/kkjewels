@@ -1,6 +1,7 @@
 import React from 'react';
 import AnimatedText from '../components/AnimatedText';
 import CustomButton from '../components/CustomButton';
+import { Link } from 'react-router-dom'; // Import Link
 
 const GiftingPage = () => {
   return (
@@ -18,7 +19,9 @@ const GiftingPage = () => {
             <AnimatedText className="text-gray-300 mb-6" delay={0.1}>
               Unsure what to choose? A KkJewels gift card is the perfect present, allowing your loved ones to select their dream piece from our exquisite collection. Available in various denominations.
             </AnimatedText>
-            <CustomButton>Purchase Gift Card</CustomButton>
+            <Link to="/contact">
+              <CustomButton>Purchase Gift Card</CustomButton>
+            </Link>
           </div>
 
           {/* Personalized Engraving Section */}
@@ -27,7 +30,9 @@ const GiftingPage = () => {
             <AnimatedText className="text-gray-300 mb-6" delay={0.1}>
               Add a unique touch to your gift with our bespoke engraving service. Personalize rings, pendants, and bracelets with initials, dates, or a special message.
             </AnimatedText>
-            <CustomButton>Learn More</CustomButton>
+            <Link to="/contact">
+              <CustomButton>Learn More</CustomButton>
+            </Link>
           </div>
 
           {/* Corporate Gifting Section */}
@@ -36,7 +41,9 @@ const GiftingPage = () => {
             <AnimatedText className="text-gray-300 mb-6" delay={0.1}>
               Show appreciation to your clients and employees with luxurious corporate gifts from KkJewels. We offer tailored solutions for bulk orders and special events.
             </AnimatedText>
-            <CustomButton>Inquire About Corporate Gifting</CustomButton>
+            <Link to="/contact">
+              <CustomButton>Inquire About Corporate Gifting</CustomButton>
+            </Link>
           </div>
         </div>
       </div>

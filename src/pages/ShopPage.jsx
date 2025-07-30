@@ -15,11 +15,11 @@ const products = [
   { id: 6, name: 'Ruby Engagement Ring', price: '$4,500', image: p2, description: 'A symbol of love, passion, and commitment.' },
 ];
 
-const ProductsPage = () => {
+const ShopPage = () => {
   return (
     <div className="min-h-screen bg-black text-white py-20 px-4 md:px-8">
       <div className="max-w-7xl mx-auto pt-20">
-        <AnimatedText className="text-5xl md:text-7xl font-decorative text-center mb-6">Our Exquisite Collections</AnimatedText>
+        <AnimatedText className="text-5xl md:text-7xl font-decorative text-center mb-6">Our Shop Collection</AnimatedText>
         <AnimatedText className="text-lg md:text-xl font-serif text-gray-300 text-center max-w-3xl mx-auto mb-12" delay={0.2}>
           Explore our curated selection of fine jewelry, where every piece tells a unique story of craftsmanship and elegance.
         </AnimatedText>
@@ -48,4 +48,4 @@ const ProductsPage = () => {
   );
 };
 
-export default ProductsPage;
+export default ShopPage;
